@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>@octokit/request test</title>
+  </head>
+  <body>
+    <script type="module">
+      import { request } from "https://cdn.pika.dev/@octokit/request";
+
+      myAsyncMethod();
+
+      async function myAsyncMethod() {
+        const result = await request("GET /");
+        console.log(result.data);
+      }
+    </script>
+  </body>
+</html>
